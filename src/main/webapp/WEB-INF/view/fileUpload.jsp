@@ -71,8 +71,15 @@ $(function(){
              complete:function(xhr){
                  var obj = JSON.parse(xhr["responseText"])
                  if(obj.status==200){
-                	 $("#file").val("");
-                     alert(obj.message);
+             /*    	 var obj = document.getElementById('fileForm') ; 
+                	 obj.select(); 
+                	 document.selection.clear();  */
+                	 alert(obj.message);
+                	
+                	//清空表单操作 
+                 	var form = document.getElementById('fileForm') ; 
+                 	form.outerHTML=form.outerHTML;  
+                	 
                  }else {
                 	 alert(obj.message);
                  }
