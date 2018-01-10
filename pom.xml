@@ -160,8 +160,15 @@
             <artifactId>commons-codec</artifactId>
             <version>1.9</version>
         </dependency>
+        
+         <!-- freemarker模板-->
+        <dependency>
+		  <groupId>freemarker</groupId>
+		  <artifactId>freemarker</artifactId>
+		  <version>2.3.8</version>
+		</dependency>
     </dependencies>
     <build>
-        <finalName>com.shaw.cn</finalName>
+        <finalName>spring</finalName>
     </build>
 </project>
